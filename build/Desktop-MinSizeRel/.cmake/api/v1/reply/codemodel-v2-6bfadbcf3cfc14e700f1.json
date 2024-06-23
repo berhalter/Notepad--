@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-MinSizeRel-51427c5df62b889a77db.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Notepad--",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Notepad--::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Notepad---MinSizeRel-0518923c921b06f5f509.json",
+					"name" : "Notepad--",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Notepad--_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Notepad--_autogen-MinSizeRel-8ff9e0ce30fb1c3da1b7.json",
+					"name" : "Notepad--_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Notepad--_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Notepad--_autogen_timestamp_deps-MinSizeRel-a0dcc5f096b35199ddde.json",
+					"name" : "Notepad--_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mjb/programs/Notepad--/build/Desktop-MinSizeRel",
+		"source" : "/home/mjb/programs/Notepad--"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
