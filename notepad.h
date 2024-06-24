@@ -30,8 +30,6 @@ private slots:
 
     void on_fontComboBox_currentFontChanged(const QFont &f);
 
-
-
     void on_pushBold_toggled(bool checked);
 
     void on_pushItalic_toggled(bool checked);
@@ -39,6 +37,14 @@ private slots:
     void on_pushUnderline_toggled(bool checked);
 
     void on_pushStrike_toggled(bool checked);
+
+    void on_pushLeft_toggled(bool checked);
+
+    void on_pushCenter_toggled(bool checked);
+
+    void on_pushRight_toggled(bool checked);
+
+    void on_pushJustify_toggled(bool checked);
 
 private:
     Ui::Notepad *ui;
