@@ -26,9 +26,19 @@ private slots:
 
     void on_actionSave_as_triggered();
 
-    void on_actionPrint_triggered();
-
     void on_actionExit_triggered();
+
+    void on_fontComboBox_currentFontChanged(const QFont &f);
+
+
+
+    void on_pushBold_toggled(bool checked);
+
+    void on_pushItalic_toggled(bool checked);
+
+    void on_pushUnderline_toggled(bool checked);
+
+    void on_pushStrike_toggled(bool checked);
 
 private:
     Ui::Notepad *ui;

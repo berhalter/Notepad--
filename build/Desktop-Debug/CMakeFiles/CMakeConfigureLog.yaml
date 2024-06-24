@@ -7,7 +7,7 @@ events:
       - "/home/mjb/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
       - "CMakeLists.txt:3 (project)"
     message: |
-      The system is: Linux - 6.5.0-35-generic - x86_64
+      The system is: Linux - 6.5.0-41-generic - x86_64
   -
     kind: "message-v1"
     backtrace:
@@ -39,8 +39,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-Bp4Jhk"
-      binary: "/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-Bp4Jhk"
+      source: "/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-W9Jyk7"
+      binary: "/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-W9Jyk7"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG"
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -48,10 +48,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-Bp4Jhk'
+        Change Dir: '/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-W9Jyk7'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_47cfb
-        [1/2] /usr/bin/g++-11   -DQT_QML_DEBUG  -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_47cfb.dir/CMakeCXXCompilerABI.cpp.o -c /home/mjb/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/ninja -v cmTC_3473b
+        [1/2] /usr/bin/g++-11   -DQT_QML_DEBUG  -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_3473b.dir/CMakeCXXCompilerABI.cpp.o -c /home/mjb/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/g++-11
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -61,8 +61,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_47cfb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_47cfb.dir/'
-         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D QT_QML_DEBUG /home/mjb/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_47cfb.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc5zbFii.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_3473b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3473b.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D QT_QML_DEBUG /home/mjb/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_3473b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccbDUa6O.s
         GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
@@ -86,13 +86,13 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_47cfb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_47cfb.dir/'
-         as -v --64 -o CMakeFiles/cmTC_47cfb.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc5zbFii.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_3473b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3473b.dir/'
+         as -v --64 -o CMakeFiles/cmTC_3473b.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccbDUa6O.s
         GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_47cfb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_47cfb.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] : && /usr/bin/g++-11 -DQT_QML_DEBUG -v CMakeFiles/cmTC_47cfb.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_47cfb   && :
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_3473b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3473b.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /usr/bin/g++-11 -DQT_QML_DEBUG -v CMakeFiles/cmTC_3473b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3473b   && :
         Using built-in specs.
         COLLECT_GCC=/usr/bin/g++-11
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -105,9 +105,9 @@ events:
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'cmTC_47cfb' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_47cfb.'
-         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cccVj8ln.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_47cfb /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_47cfb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'cmTC_47cfb' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_47cfb.'
+        COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'cmTC_3473b' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3473b.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLLNaKg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3473b /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_3473b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'cmTC_3473b' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3473b.'
         
       exitCode: 0
   -
@@ -147,10 +147,10 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-Bp4Jhk']
+        ignore line: [Change Dir: '/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-W9Jyk7']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_47cfb]
-        ignore line: [[1/2] /usr/bin/g++-11   -DQT_QML_DEBUG  -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_47cfb.dir/CMakeCXXCompilerABI.cpp.o -c /home/mjb/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_3473b]
+        ignore line: [[1/2] /usr/bin/g++-11   -DQT_QML_DEBUG  -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_3473b.dir/CMakeCXXCompilerABI.cpp.o -c /home/mjb/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/g++-11]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -160,8 +160,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_47cfb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_47cfb.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D QT_QML_DEBUG /home/mjb/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_47cfb.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc5zbFii.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_3473b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3473b.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D QT_QML_DEBUG /home/mjb/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_3473b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccbDUa6O.s]
         ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -185,13 +185,13 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_47cfb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_47cfb.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_47cfb.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc5zbFii.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_3473b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3473b.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_3473b.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccbDUa6O.s]
         ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_47cfb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_47cfb.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] : && /usr/bin/g++-11 -DQT_QML_DEBUG -v CMakeFiles/cmTC_47cfb.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_47cfb   && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_3473b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3473b.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /usr/bin/g++-11 -DQT_QML_DEBUG -v CMakeFiles/cmTC_3473b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3473b   && :]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/g++-11]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
@@ -204,13 +204,13 @@ events:
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'cmTC_47cfb' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_47cfb.']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cccVj8ln.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_47cfb /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_47cfb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'cmTC_3473b' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3473b.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLLNaKg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3473b /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_3473b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cccVj8ln.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccLLNaKg.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -228,7 +228,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_47cfb] ==> ignore
+          arg [cmTC_3473b] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
@@ -240,7 +240,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
-          arg [CMakeFiles/cmTC_47cfb.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_3473b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -282,8 +282,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-4auMez"
-      binary: "/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-4auMez"
+      source: "/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-NI9JBY"
+      binary: "/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-NI9JBY"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -293,11 +293,11 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-4auMez'
+        Change Dir: '/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-NI9JBY'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_2396b
-        [1/2] /usr/bin/g++-11 -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG  -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/cmTC_2396b.dir/src.cxx.o -c /home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-4auMez/src.cxx
-        [2/2] : && /usr/bin/g++-11 -DQT_QML_DEBUG  CMakeFiles/cmTC_2396b.dir/src.cxx.o -o cmTC_2396b   && :
+        Run Build Command(s): /usr/bin/ninja -v cmTC_0e845
+        [1/2] /usr/bin/g++-11 -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG  -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/cmTC_0e845.dir/src.cxx.o -c /home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-NI9JBY/src.cxx
+        [2/2] : && /usr/bin/g++-11 -DQT_QML_DEBUG  CMakeFiles/cmTC_0e845.dir/src.cxx.o -o cmTC_0e845   && :
         
       exitCode: 0
   -
@@ -319,8 +319,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-XrRX0K"
-      binary: "/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-XrRX0K"
+      source: "/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-W18rY4"
+      binary: "/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-W18rY4"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -330,11 +330,11 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: '/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-XrRX0K'
+        Change Dir: '/home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-W18rY4'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_232ca
-        [1/2] /usr/bin/g++-11 -DHAVE_STDATOMIC  -DQT_QML_DEBUG  -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/cmTC_232ca.dir/src.cxx.o -c /home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-XrRX0K/src.cxx
-        [2/2] : && /usr/bin/g++-11 -DQT_QML_DEBUG  CMakeFiles/cmTC_232ca.dir/src.cxx.o -o cmTC_232ca   && :
+        Run Build Command(s): /usr/bin/ninja -v cmTC_648fc
+        [1/2] /usr/bin/g++-11 -DHAVE_STDATOMIC  -DQT_QML_DEBUG  -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/cmTC_648fc.dir/src.cxx.o -c /home/mjb/programs/Notepad--/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-W18rY4/src.cxx
+        [2/2] : && /usr/bin/g++-11 -DQT_QML_DEBUG  CMakeFiles/cmTC_648fc.dir/src.cxx.o -o cmTC_648fc   && :
         
       exitCode: 0
 ...

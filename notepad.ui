@@ -16,6 +16,137 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item row="0" column="7">
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QPushButton" name="pushUnderline">
+        <property name="text">
+         <string>Underline</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">styleGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="0" column="8">
+       <widget class="QPushButton" name="pushLeft">
+        <property name="text">
+         <string>Left</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">alignmentGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="0" column="9">
+       <widget class="QPushButton" name="pushCenter">
+        <property name="text">
+         <string>Center</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">alignmentGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QFontComboBox" name="fontComboBox"/>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="pushBold">
+        <property name="text">
+         <string>Bold</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">styleGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QPushButton" name="pushItalic">
+        <property name="text">
+         <string>Italic</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">styleGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="QPushButton" name="pushStrike">
+        <property name="text">
+         <string>Strikethrough</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">styleGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSpinBox" name="spinBox"/>
+      </item>
+      <item row="0" column="2">
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="10">
+       <widget class="QPushButton" name="pushRight">
+        <property name="text">
+         <string>Right</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">alignmentGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="0" column="11">
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Justify</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">alignmentGroup</string>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
      <widget class="QTextEdit" name="textEdit"/>
     </item>
    </layout>
@@ -37,7 +168,6 @@
     <addaction name="actionOpen"/>
     <addaction name="actionSave"/>
     <addaction name="actionSave_as"/>
-    <addaction name="actionPrint"/>
     <addaction name="actionExit"/>
    </widget>
    <addaction name="menuFile"/>
@@ -63,11 +193,6 @@
     <string>Save as</string>
    </property>
   </action>
-  <action name="actionPrint">
-   <property name="text">
-    <string>Print</string>
-   </property>
-  </action>
   <action name="actionExit">
    <property name="text">
     <string>Exit</string>
@@ -76,4 +201,12 @@
  </widget>
  <resources/>
  <connections/>
+ <buttongroups>
+  <buttongroup name="alignmentGroup"/>
+  <buttongroup name="styleGroup">
+   <property name="exclusive">
+    <bool>false</bool>
+   </property>
+  </buttongroup>
+ </buttongroups>
 </ui>

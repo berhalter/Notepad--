@@ -2,6 +2,7 @@
 #include "./ui_notepad.h"
 #include <QFileDialog>
 #include <QMessageBox>
+#include <QFont>
 
 Notepad::Notepad(QWidget *parent)
     : QMainWindow(parent)
@@ -90,23 +91,51 @@ void Notepad::on_actionSave_as_triggered()
 }
 
 
-void Notepad::on_actionPrint_triggered()
-{
-#if defined(QT_PRINTSUPPORT_LIB) && QT_CONFIG(printer)
-    QPrinter printDev;
-#if QT_CONFIG(printdialog)
-    QPrintDialog dialog(&printDev), this);
-    if (dialog.exec() == QDialog::Rejected) {
-        return;
-    }
-#endif //QT_CONFIG(printdialog)
-    ui->textEdit->print(&printDev);
-#endif //QT_CONFIG(printer)
-}
-
 
 void Notepad::on_actionExit_triggered()
 {
     QApplication::quit();
+}
+
+
+void Notepad::on_fontComboBox_currentFontChanged(const QFont &f)
+{
+    ui->textEdit->setFont(f);
+}
+
+
+void Notepad::on_pushBold_toggled(bool checked)
+{
+    if (checked) {
+        ui->textEdit->setFontWeight(QFont::Bold);
+    } else {
+        ui->textEdit->setFontWeight(QFont::Normal);
+    }
+}
+
+
+void Notepad::on_pushItalic_toggled(bool checked)
+{
+    ui->textEdit->setFontItalic(checked); //use this to set only the selected font to italic. not sure how to do this for bold, maybe line weight?
+                                      //other issue is that the button remains toggled when the cursor is moved to a non italic area. can check if cursor is moved and if current text is italic?
+    // QFont font = ui->fontComboBox->currentFont();
+    // font.setItalic(checked);
+    // ui->textEdit->setFont(font);
+}
+
+
+void Notepad::on_pushUnderline_toggled(bool checked)
+{
+    ui->textEdit->setFontUnderline(checked);
+}
+
+
+
+void Notepad::on_pushStrike_toggled(bool checked)
+{
+    //see comments in on_pushItalic_toggled()
+    QFont font = ui->fontComboBox->currentFont();
+    font.setStrikeOut(checked);
+    ui->textEdit->setFont(font);
 }
 

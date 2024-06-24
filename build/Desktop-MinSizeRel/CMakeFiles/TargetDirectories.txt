@@ -1,9 +1,0 @@
-/home/mjb/programs/Notepad--/build/Desktop-MinSizeRel/CMakeFiles/Notepad--.dir
-/home/mjb/programs/Notepad--/build/Desktop-MinSizeRel/CMakeFiles/edit_cache.dir
-/home/mjb/programs/Notepad--/build/Desktop-MinSizeRel/CMakeFiles/rebuild_cache.dir
-/home/mjb/programs/Notepad--/build/Desktop-MinSizeRel/CMakeFiles/list_install_components.dir
-/home/mjb/programs/Notepad--/build/Desktop-MinSizeRel/CMakeFiles/install.dir
-/home/mjb/programs/Notepad--/build/Desktop-MinSizeRel/CMakeFiles/install/local.dir
-/home/mjb/programs/Notepad--/build/Desktop-MinSizeRel/CMakeFiles/install/strip.dir
-/home/mjb/programs/Notepad--/build/Desktop-MinSizeRel/CMakeFiles/Notepad--_autogen_timestamp_deps.dir
-/home/mjb/programs/Notepad--/build/Desktop-MinSizeRel/CMakeFiles/Notepad--_autogen.dir
