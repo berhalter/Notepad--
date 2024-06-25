@@ -28,8 +28,8 @@
         <property name="bottomMargin">
          <number>0</number>
         </property>
-        <item row="0" column="4">
-         <widget class="QPushButton" name="redoButton">
+        <item row="0" column="12">
+         <widget class="QPushButton" name="pushRedo">
           <property name="text">
            <string>Redo</string>
           </property>
@@ -38,8 +38,8 @@
           </attribute>
          </widget>
         </item>
-        <item row="0" column="1">
-         <widget class="QPushButton" name="cutButton">
+        <item row="0" column="9">
+         <widget class="QPushButton" name="pushCut">
           <property name="text">
            <string>Cut</string>
           </property>
@@ -48,8 +48,45 @@
           </attribute>
          </widget>
         </item>
-        <item row="0" column="0">
-         <widget class="QPushButton" name="copyButton">
+        <item row="0" column="3">
+         <widget class="QPushButton" name="pushSaveAs">
+          <property name="text">
+           <string>Save as</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">fileActionGroup</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="Line" name="line_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="pushSave">
+          <property name="text">
+           <string>Save</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">fileActionGroup</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushOpen">
+          <property name="text">
+           <string>Open</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">fileActionGroup</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="0" column="8">
+         <widget class="QPushButton" name="pushCopy">
           <property name="text">
            <string>Copy</string>
           </property>
@@ -58,8 +95,8 @@
           </attribute>
          </widget>
         </item>
-        <item row="0" column="3">
-         <widget class="QPushButton" name="undoButton">
+        <item row="0" column="11">
+         <widget class="QPushButton" name="pushUndo">
           <property name="text">
            <string>Undo</string>
           </property>
@@ -68,8 +105,8 @@
           </attribute>
          </widget>
         </item>
-        <item row="0" column="2">
-         <widget class="QPushButton" name="pasteButton">
+        <item row="0" column="10">
+         <widget class="QPushButton" name="pushPaste">
           <property name="text">
            <string>Paste</string>
           </property>
@@ -78,8 +115,18 @@
           </attribute>
          </widget>
         </item>
-        <item row="0" column="5">
-         <spacer name="horizontalSpacer">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pushNew">
+          <property name="text">
+           <string>New</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">fileActionGroup</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="0" column="13">
+         <spacer name="horizontalSpacer_2">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
@@ -235,6 +282,19 @@
           </attribute>
          </widget>
         </item>
+        <item row="0" column="12">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
        </layout>
       </item>
      </layout>
@@ -260,7 +320,7 @@
     <addaction name="actionNew"/>
     <addaction name="actionOpen"/>
     <addaction name="actionSave"/>
-    <addaction name="actionSave_as"/>
+    <addaction name="actionSaveAs"/>
     <addaction name="actionExit"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
@@ -301,7 +361,7 @@
     <string>Ctrl+S</string>
    </property>
   </action>
-  <action name="actionSave_as">
+  <action name="actionSaveAs">
    <property name="text">
     <string>Save as</string>
    </property>
@@ -368,5 +428,6 @@
    </property>
   </buttongroup>
   <buttongroup name="editActionGroup"/>
+  <buttongroup name="fileActionGroup"/>
  </buttongroups>
 </ui>

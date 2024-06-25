@@ -9,11 +9,18 @@ Notepad::Notepad(QWidget *parent)
     , ui(new Ui::Notepad)
 {
     ui->setupUi(this);
-    connect(ui->copyButton, SIGNAL(clicked()), this, SLOT(on_actionCopy_triggered()));
-    connect(ui->cutButton, SIGNAL(clicked()), this, SLOT(on_actionCut_triggered()));
-    connect(ui->pasteButton, SIGNAL(clicked()), this, SLOT(on_actionPaste_triggered()));
-    connect(ui->undoButton, SIGNAL(clicked()), this, SLOT(on_actionUndo_triggered()));
-    connect(ui->redoButton, SIGNAL(clicked()), this, SLOT(on_actionRedo_triggered()));
+
+    connect(ui->pushNew, SIGNAL(clicked()), this, SLOT(on_actionNew_triggered()));
+    connect(ui->pushOpen, SIGNAL(clicked()), this, SLOT(on_actionOpen_triggered()));
+    connect(ui->pushSave, SIGNAL(clicked()), this, SLOT(on_actionSave_triggered()));
+    connect(ui->pushSaveAs, SIGNAL(clicked()), this, SLOT(on_actionSaveAs_triggered()));
+
+
+    connect(ui->pushCopy, SIGNAL(clicked()), this, SLOT(on_actionCopy_triggered()));
+    connect(ui->pushCut, SIGNAL(clicked()), this, SLOT(on_actionCut_triggered()));
+    connect(ui->pushPaste, SIGNAL(clicked()), this, SLOT(on_actionPaste_triggered()));
+    connect(ui->pushUndo, SIGNAL(clicked()), this, SLOT(on_actionUndo_triggered()));
+    connect(ui->pushRedo, SIGNAL(clicked()), this, SLOT(on_actionRedo_triggered()));
 }
 
 Notepad::~Notepad()
@@ -33,7 +40,7 @@ void Notepad::on_actionNew_triggered()
 
 void Notepad::on_actionOpen_triggered()
 {
-    QString fileName = QFileDialog::getOpenFileName(this, "Open the file");
+    QString fileName = QFileDialog::getOpenFileName(this, "Open");
     if (fileName.isEmpty()) {
         return;
     }
@@ -76,7 +83,7 @@ void Notepad::on_actionSave_triggered()
 }
 
 
-void Notepad::on_actionSave_as_triggered()
+void Notepad::on_actionSaveAs_triggered()
 {
     QString fileName;
     fileName = QFileDialog::getSaveFileName(this, "Save as");
