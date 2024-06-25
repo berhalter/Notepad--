@@ -46,6 +46,8 @@ private slots:
 
     void on_pushJustify_toggled(bool checked);
 
+    void on_spinPtSize_valueChanged(int arg1);
+
 private:
     Ui::Notepad *ui;
     QString currentFile;

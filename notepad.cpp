@@ -116,8 +116,8 @@ void Notepad::on_pushBold_toggled(bool checked)
 
 void Notepad::on_pushItalic_toggled(bool checked)
 {
-    ui->textEdit->setFontItalic(checked); //use this to set only the selected font to italic. not sure how to do this for bold, maybe line weight?
-                                      //other issue is that the button remains toggled when the cursor is moved to a non italic area. can check if cursor is moved and if current text is italic?
+    ui->textEdit->setFontItalic(checked);
+    //the button remains toggled when the cursor is moved to a non italic area. can check if cursor is moved and if current text is italic?
 }
 
 
@@ -129,7 +129,7 @@ void Notepad::on_pushUnderline_toggled(bool checked)
 
 void Notepad::on_pushStrike_toggled(bool checked)
 {
-    //see comments in on_pushItalic_toggled()
+    //see comment in on_pushItalic_toggled()
     QFont font = ui->fontComboBox->currentFont();
     font.setStrikeOut(checked);
     ui->textEdit->setFont(font);
@@ -165,5 +165,12 @@ void Notepad::on_pushJustify_toggled(bool checked)
     if (checked) {
         ui->textEdit->setAlignment(Qt::AlignJustify);
     }
+}
+
+
+void Notepad::on_spinPtSize_valueChanged(int arg1)
+{
+    //see comment in on_pushItalic_toggled()
+    ui->textEdit->setFontPointSize(arg1);
 }
 
