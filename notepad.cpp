@@ -3,6 +3,7 @@
 #include <QFileDialog>
 #include <QMessageBox>
 #include <QFont>
+#include <QtMath>
 
 Notepad::Notepad(QWidget *parent)
     : QMainWindow(parent)
@@ -21,6 +22,8 @@ Notepad::Notepad(QWidget *parent)
     connect(ui->pushPaste, SIGNAL(clicked()), this, SLOT(on_actionPaste_triggered()));
     connect(ui->pushUndo, SIGNAL(clicked()), this, SLOT(on_actionUndo_triggered()));
     connect(ui->pushRedo, SIGNAL(clicked()), this, SLOT(on_actionRedo_triggered()));
+
+    connect(ui->textEdit, SIGNAL(cursorPositionChanged()), this, SLOT(on_cursorPositionChanged()));
 }
 
 Notepad::~Notepad()
@@ -112,7 +115,7 @@ void Notepad::on_actionExit_triggered()
 
 void Notepad::on_fontComboBox_currentFontChanged(const QFont &f)
 {
-    ui->textEdit->setFont(f);
+    ui->textEdit->setCurrentFont(f);
 }
 
 
@@ -129,7 +132,6 @@ void Notepad::on_pushBold_toggled(bool checked)
 void Notepad::on_pushItalic_toggled(bool checked)
 {
     ui->textEdit->setFontItalic(checked);
-    //the button remains toggled when the cursor is moved to a non italic area. can check if cursor is moved and if current text is italic?
 }
 
 
@@ -141,10 +143,10 @@ void Notepad::on_pushUnderline_toggled(bool checked)
 
 void Notepad::on_pushStrike_toggled(bool checked)
 {
-    //see comment in on_pushItalic_toggled()
-    QFont font = ui->fontComboBox->currentFont();
+    //Strikethrough function is part of QFont, not QText edit, so it needs to be handled differently
+    QFont font = ui->textEdit->currentFont();
     font.setStrikeOut(checked);
-    ui->textEdit->setFont(font);
+    ui->textEdit->setCurrentFont(font);
 }
 
 
@@ -216,3 +218,46 @@ void Notepad::on_actionRedo_triggered()
     ui->textEdit->redo();
 }
 
+
+void Notepad::on_cursorPositionChanged()
+{
+    if (ui->textEdit->alignment() == Qt::AlignLeft) {
+        ui->pushLeft->toggle();
+    } else if (ui->textEdit->alignment() == Qt::AlignCenter) {
+        ui->pushCenter->toggle();
+    } else if (ui->textEdit->alignment() == Qt::AlignRight) {
+        ui->pushRight->toggle();
+    } else if (ui->textEdit->alignment() == Qt::AlignJustify) {
+        ui->pushJustify->toggle();
+    }
+
+    ui->fontComboBox->setCurrentFont(ui->textEdit->currentFont());
+    int pt_size = qFloor(ui->textEdit->fontPointSize());
+    ui->spinPtSize->setValue(pt_size);
+
+    if (ui->textEdit->fontWeight() == QFont::Bold) {
+        on_pushBold_toggled(true);
+    } else {
+        on_pushBold_toggled(false);
+    }
+    if (ui->textEdit->fontItalic()) {
+        ui->pushItalic->setChecked(true);
+    } else {
+        ui->pushItalic->setChecked(false);
+    }
+    if (ui->textEdit->fontUnderline()) {
+        ui->pushUnderline->setChecked(true);
+    } else {
+        ui->pushUnderline->setChecked(false);
+    }
+    //Strikethrough function is part of QFont, not QText edit, so it needs to be handled differently
+    QFont current_font = ui->textEdit->currentFont();
+    if (current_font.strikeOut()) {
+        ui->pushStrike->setChecked(true);
+    } else {
+        ui->pushStrike->setChecked(false);
+    }
+
+
+
+}

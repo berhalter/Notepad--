@@ -58,6 +58,8 @@ private slots:
 
     void on_actionRedo_triggered();
 
+    void on_cursorPositionChanged();
+
 private:
     Ui::Notepad *ui;
     QString currentFile;
