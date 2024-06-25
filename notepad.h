@@ -48,6 +48,16 @@ private slots:
 
     void on_spinPtSize_valueChanged(int arg1);
 
+    void on_actionCopy_triggered();
+
+    void on_actionCut_triggered();
+
+    void on_actionPaste_triggered();
+
+    void on_actionUndo_triggered();
+
+    void on_actionRedo_triggered();
+
 private:
     Ui::Notepad *ui;
     QString currentFile;

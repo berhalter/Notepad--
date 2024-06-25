@@ -174,3 +174,33 @@ void Notepad::on_spinPtSize_valueChanged(int arg1)
     ui->textEdit->setFontPointSize(arg1);
 }
 
+
+void Notepad::on_actionCopy_triggered()
+{
+    ui->textEdit->copy();
+}
+
+
+void Notepad::on_actionCut_triggered()
+{
+    ui->textEdit->cut();
+}
+
+
+void Notepad::on_actionPaste_triggered()
+{
+    ui->textEdit->paste();
+}
+
+
+void Notepad::on_actionUndo_triggered()
+{
+    ui->textEdit->undo();
+}
+
+
+void Notepad::on_actionRedo_triggered()
+{
+    ui->textEdit->redo();
+}
+
