@@ -9,6 +9,11 @@ Notepad::Notepad(QWidget *parent)
     , ui(new Ui::Notepad)
 {
     ui->setupUi(this);
+    connect(ui->copyButton, SIGNAL(clicked()), this, SLOT(on_actionCopy_triggered()));
+    connect(ui->cutButton, SIGNAL(clicked()), this, SLOT(on_actionCut_triggered()));
+    connect(ui->pasteButton, SIGNAL(clicked()), this, SLOT(on_actionPaste_triggered()));
+    connect(ui->undoButton, SIGNAL(clicked()), this, SLOT(on_actionUndo_triggered()));
+    connect(ui->redoButton, SIGNAL(clicked()), this, SLOT(on_actionRedo_triggered()));
 }
 
 Notepad::~Notepad()
