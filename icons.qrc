@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/icons8-undo-30.png</file>
+        <file>icons/icons8-underline-30.png</file>
+        <file>icons/icons8-strikethrough-30.png</file>
+        <file>icons/icons8-save-as-30.png</file>
+        <file>icons/icons8-save-30.png</file>
+        <file>icons/icons8-redo-30.png</file>
+        <file>icons/icons8-paste-30.png</file>
+        <file>icons/icons8-opened-folder-30.png</file>
+        <file>icons/icons8-new-file-30.png</file>
+        <file>icons/icons8-italic-30.png</file>
+        <file>icons/icons8-documents-30.png</file>
+        <file>icons/icons8-cut-30.png</file>
+        <file>icons/icons8-bold-30.png</file>
+        <file>icons/icons8-align-right-30.png</file>
+        <file>icons/icons8-align-left-30.png</file>
+        <file>icons/icons8-align-justify-30.png</file>
+        <file>icons/icons8-align-center-30.png</file>
+    </qresource>
+</RCC>

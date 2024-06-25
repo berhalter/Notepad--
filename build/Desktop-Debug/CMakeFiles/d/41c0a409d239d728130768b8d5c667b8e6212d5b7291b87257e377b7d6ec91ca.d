@@ -435,6 +435,7 @@ Notepad--_autogen/timestamp: \
   CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.7/CMakeSystem.cmake \
   Notepad--_autogen/moc_predefs.h \
+  /home/mjb/programs/Notepad--/icons.qrc \
   /home/mjb/programs/Notepad--/main.cpp \
   /home/mjb/programs/Notepad--/notepad.cpp \
   /home/mjb/programs/Notepad--/notepad.h \

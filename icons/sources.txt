@@ -1,0 +1,17 @@
+https://icons8.com/icon/R6CZNG0w5CQP/save
+https://icons8.com/icon/vIrvj17cqjTh/save-as
+https://icons8.com/icon/8KQ8uvGmSKjb/new-file
+https://icons8.com/icon/M0FYk2ztVDSV/opened-folder
+https://icons8.com/icon/RZ3t-v0IP-kO/undo
+https://icons8.com/icon/GT3ZdqQWno28/redo
+https://icons8.com/icon/qlVSbteVzWJQ/documents
+https://icons8.com/icon/BWbEgcokMH14/cut
+https://icons8.com/icon/MdQNXsGPQDkm/paste
+https://icons8.com/icon/9qoeXQgv7iSl/bold
+https://icons8.com/icon/vjwd-IQLJKBr/italic
+https://icons8.com/icon/HSP78c27ZMXO/underline
+https://icons8.com/icon/9no-JD2qfrDZ/strikethrough
+https://icons8.com/icon/0x2P7nwCROZ-/align-left
+https://icons8.com/icon/eBAU0k88cBjP/align-right
+https://icons8.com/icon/OKiB9yq8RcEE/align-justify
+https://icons8.com/icon/OiXlqpZfeeWa/align-center

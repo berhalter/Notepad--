@@ -395,7 +395,8 @@
 		"/home/mjb/Qt/6.7.1/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake",
 		"/home/mjb/Qt/6.7.1/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake",
 		"/home/mjb/Qt/6.7.1/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake",
-		"/home/mjb/Qt/Tools/CMake/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
+		"/home/mjb/Qt/Tools/CMake/share/cmake-3.27/Modules/GNUInstallDirs.cmake",
+		"/home/mjb/programs/Notepad--/icons.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/mjb/programs/Notepad--",
 	"DEP_FILE" : "/home/mjb/programs/Notepad--/build/Desktop-Debug/Notepad--_autogen/deps",

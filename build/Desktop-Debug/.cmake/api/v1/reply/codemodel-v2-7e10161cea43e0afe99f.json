@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-fe2c20d796eb09a10ee9.json",
+					"jsonFile" : "directory-.-Debug-1f9dcba5abc4ef100e22.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Notepad--::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Notepad---Debug-3ee269319ac0e1416437.json",
+					"jsonFile" : "target-Notepad---Debug-438f43247f78be3342d8.json",
 					"name" : "Notepad--",
 					"projectIndex" : 0
 				},
