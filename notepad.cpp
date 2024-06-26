@@ -70,7 +70,7 @@ void Notepad::on_actionSave_triggered()
 {
     QString fileName;
     if (currentFile.isEmpty()) {
-        fileName = QFileDialog::getSaveFileName(this, "Save");
+        fileName = QFileDialog::getSaveFileName(this, "Save", "/home", "HTML(.html);;Text(*.txt)");
         if (fileName.isEmpty()) {
             return;
         }
@@ -85,7 +85,7 @@ void Notepad::on_actionSave_triggered()
     }
     setWindowTitle(fileName);
     QTextStream out(&file);
-    QString text = ui->textEdit->toPlainText();
+    QString text = ui->textEdit->toHtml(); //needs to be html to preserve formatting
     out << text;
     file.close();
 }
@@ -94,7 +94,7 @@ void Notepad::on_actionSave_triggered()
 void Notepad::on_actionSaveAs_triggered()
 {
     QString fileName;
-    fileName = QFileDialog::getSaveFileName(this, "Save as");
+    fileName = QFileDialog::getSaveFileName(this, "Save as", "/home", "HTML(.html);;Text(*.txt)");
     if (fileName.isEmpty()) {
         return;
     }
@@ -105,7 +105,7 @@ void Notepad::on_actionSaveAs_triggered()
     }
     setWindowTitle(fileName);
     QTextStream out(&file);
-    QString text = ui->textEdit->toPlainText();
+    QString text = ui->textEdit->toHtml(); //needs to be html to preserve formatting
     out << text;
     file.close();
 }
