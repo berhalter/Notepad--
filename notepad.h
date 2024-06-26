@@ -2,6 +2,7 @@
 #define NOTEPAD_H
 
 #include <QMainWindow>
+#include <QTextCharFormat>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -46,7 +47,7 @@ private slots:
 
     void on_pushJustify_toggled(bool checked);
 
-    void on_spinPtSize_valueChanged(int arg1);
+    void on_spinPtSize_valueChanged(double arg1);
 
     void on_actionCopy_triggered();
 
@@ -59,6 +60,8 @@ private slots:
     void on_actionRedo_triggered();
 
     void on_cursorPositionChanged();
+
+    void on_currentCharFormatChanged(QTextCharFormat f);
 
 private:
     Ui::Notepad *ui;

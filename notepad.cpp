@@ -11,11 +11,15 @@ Notepad::Notepad(QWidget *parent)
 {
     ui->setupUi(this);
 
+    //need to set an initial value manually or else the spinbox incorrectly displays 0 when the cursor is moved and there are multiple font sizes
+    double init_pt = 10.0;
+    ui->textEdit->setFontPointSize(init_pt);
+
+
     connect(ui->pushNew, SIGNAL(clicked()), this, SLOT(on_actionNew_triggered()));
     connect(ui->pushOpen, SIGNAL(clicked()), this, SLOT(on_actionOpen_triggered()));
     connect(ui->pushSave, SIGNAL(clicked()), this, SLOT(on_actionSave_triggered()));
     connect(ui->pushSaveAs, SIGNAL(clicked()), this, SLOT(on_actionSaveAs_triggered()));
-
 
     connect(ui->pushCopy, SIGNAL(clicked()), this, SLOT(on_actionCopy_triggered()));
     connect(ui->pushCut, SIGNAL(clicked()), this, SLOT(on_actionCut_triggered()));
@@ -24,6 +28,7 @@ Notepad::Notepad(QWidget *parent)
     connect(ui->pushRedo, SIGNAL(clicked()), this, SLOT(on_actionRedo_triggered()));
 
     connect(ui->textEdit, SIGNAL(cursorPositionChanged()), this, SLOT(on_cursorPositionChanged()));
+    connect(ui->textEdit, SIGNAL(currentCharFormatChanged(QTextCharFormat)), this, SLOT(on_currentCharFormatChanged(QTextCharFormat)));
 }
 
 Notepad::~Notepad()
@@ -143,7 +148,7 @@ void Notepad::on_pushUnderline_toggled(bool checked)
 
 void Notepad::on_pushStrike_toggled(bool checked)
 {
-    //Strikethrough function is part of QFont, not QText edit, so it needs to be handled differently
+    //Strikethrough function is part of QFont, not QTextEdit, so it needs to be handled differently
     QFont font = ui->textEdit->currentFont();
     font.setStrikeOut(checked);
     ui->textEdit->setCurrentFont(font);
@@ -182,9 +187,8 @@ void Notepad::on_pushJustify_toggled(bool checked)
 }
 
 
-void Notepad::on_spinPtSize_valueChanged(int arg1)
+void Notepad::on_spinPtSize_valueChanged(double arg1)
 {
-    //see comment in on_pushItalic_toggled()
     ui->textEdit->setFontPointSize(arg1);
 }
 
@@ -221,43 +225,38 @@ void Notepad::on_actionRedo_triggered()
 
 void Notepad::on_cursorPositionChanged()
 {
-    if (ui->textEdit->alignment() == Qt::AlignLeft) {
-        ui->pushLeft->toggle();
-    } else if (ui->textEdit->alignment() == Qt::AlignCenter) {
-        ui->pushCenter->toggle();
-    } else if (ui->textEdit->alignment() == Qt::AlignRight) {
-        ui->pushRight->toggle();
-    } else if (ui->textEdit->alignment() == Qt::AlignJustify) {
-        ui->pushJustify->toggle();
+    QTextCursor cur = ui->textEdit->textCursor();
+    if (!(cur.hasSelection())) { //selection will "spread" alignment without this check
+        if (ui->textEdit->alignment() == Qt::AlignLeft) {
+            ui->pushLeft->toggle();
+        } else if (ui->textEdit->alignment() == Qt::AlignCenter) {
+            ui->pushCenter->toggle();
+        } else if (ui->textEdit->alignment() == Qt::AlignRight) {
+            ui->pushRight->toggle();
+        } else if (ui->textEdit->alignment() == Qt::AlignJustify) {
+            ui->pushJustify->toggle();
+        }
     }
-
-    ui->fontComboBox->setCurrentFont(ui->textEdit->currentFont());
-    int pt_size = qFloor(ui->textEdit->fontPointSize());
-    ui->spinPtSize->setValue(pt_size);
-
-    if (ui->textEdit->fontWeight() == QFont::Bold) {
-        on_pushBold_toggled(true);
-    } else {
-        on_pushBold_toggled(false);
-    }
-    if (ui->textEdit->fontItalic()) {
-        ui->pushItalic->setChecked(true);
-    } else {
-        ui->pushItalic->setChecked(false);
-    }
-    if (ui->textEdit->fontUnderline()) {
-        ui->pushUnderline->setChecked(true);
-    } else {
-        ui->pushUnderline->setChecked(false);
-    }
-    //Strikethrough function is part of QFont, not QText edit, so it needs to be handled differently
-    QFont current_font = ui->textEdit->currentFont();
-    if (current_font.strikeOut()) {
-        ui->pushStrike->setChecked(true);
-    } else {
-        ui->pushStrike->setChecked(false);
-    }
-
-
-
 }
+
+
+void Notepad::on_currentCharFormatChanged(QTextCharFormat f) {
+    QTextCursor cur = ui->textEdit->textCursor();
+    if (!(cur.hasSelection())) { //selection will "spread" char format without this check
+        //font family and size
+        ui->fontComboBox->setCurrentFont(f.font());
+        ui->spinPtSize->setValue(f.fontPointSize());
+
+        //font style
+        if (f.fontWeight() == QFont::Bold) { //bold unfortunately doesn't have a convenient bool method to use like the rest
+            ui->pushBold->setChecked(true);
+        } else {
+            ui->pushBold->setChecked(false);
+        }
+        //f.fontFoo() returns a bool indicating whether or not the font is in Foo format at the current selection
+        ui->pushItalic->setChecked(f.fontItalic());
+        ui->pushUnderline->setChecked(f.fontUnderline());
+        ui->pushStrike->setChecked(f.fontStrikeOut());
+    }
+}
+
