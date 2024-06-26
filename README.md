@@ -10,7 +10,7 @@ Alternatively, you can build from source one of two ways:
 1. Open the project in Qt Creator and build for Release
 2. Run `cmake ../../` from the `./build/Desktop-Release` directory
 
-## Future Improvements
+## Bugs and Future Improvements
 Please see the "Issues" tab for this repository.
 
 ## License
