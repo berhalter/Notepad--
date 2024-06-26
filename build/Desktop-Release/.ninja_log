@@ -1,0 +1,12 @@
+# ninja log v5
+2	238	1719433940778530787	Notepad--_autogen/timestamp	c55317833a1963ec
+245	1889	1719433942438558217	CMakeFiles/Notepad--.dir/notepad.cpp.o	c847049ed405fce1
+2	238	1719433940778530787	Notepad--_autogen/mocs_compilation.cpp	c55317833a1963ec
+1889	2239	1719433942782563899	Notepad--	5cfe10a20017698e
+2	238	1719433940778530787	/home/mjb/programs/Notepad--/build/Desktop-Release/Notepad--_autogen/timestamp	c55317833a1963ec
+2	238	1719433940778530787	/home/mjb/programs/Notepad--/build/Desktop-Release/Notepad--_autogen/mocs_compilation.cpp	c55317833a1963ec
+246	270	1719433940818531448	CMakeFiles/Notepad--.dir/Notepad--_autogen/EWIEGA46WW/qrc_icons.cpp.o	c7e9b4751f1b7be3
+245	1282	1719433941830548172	CMakeFiles/Notepad--.dir/main.cpp.o	be4e24fa7246744f
+238	245	1719433414937171810	Notepad--_autogen/EWIEGA46WW/qrc_icons.cpp	2d82122d97268f82
+238	245	1719433414937171810	/home/mjb/programs/Notepad--/build/Desktop-Release/Notepad--_autogen/EWIEGA46WW/qrc_icons.cpp	2d82122d97268f82
+245	1341	1719433941890549164	CMakeFiles/Notepad--.dir/Notepad--_autogen/mocs_compilation.cpp.o	b843b02b8594dbf4

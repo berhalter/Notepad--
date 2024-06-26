@@ -1,0 +1,9 @@
+/home/mjb/programs/Notepad--/build/Desktop-Release/CMakeFiles/Notepad--.dir
+/home/mjb/programs/Notepad--/build/Desktop-Release/CMakeFiles/edit_cache.dir
+/home/mjb/programs/Notepad--/build/Desktop-Release/CMakeFiles/rebuild_cache.dir
+/home/mjb/programs/Notepad--/build/Desktop-Release/CMakeFiles/list_install_components.dir
+/home/mjb/programs/Notepad--/build/Desktop-Release/CMakeFiles/install.dir
+/home/mjb/programs/Notepad--/build/Desktop-Release/CMakeFiles/install/local.dir
+/home/mjb/programs/Notepad--/build/Desktop-Release/CMakeFiles/install/strip.dir
+/home/mjb/programs/Notepad--/build/Desktop-Release/CMakeFiles/Notepad--_autogen_timestamp_deps.dir
+/home/mjb/programs/Notepad--/build/Desktop-Release/CMakeFiles/Notepad--_autogen.dir

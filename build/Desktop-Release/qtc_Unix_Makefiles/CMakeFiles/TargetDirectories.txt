@@ -1,0 +1,8 @@
+/home/mjb/programs/Notepad--/build/Desktop-Release/qtc_Unix_Makefiles/CMakeFiles/Notepad--.dir
+/home/mjb/programs/Notepad--/build/Desktop-Release/qtc_Unix_Makefiles/CMakeFiles/edit_cache.dir
+/home/mjb/programs/Notepad--/build/Desktop-Release/qtc_Unix_Makefiles/CMakeFiles/rebuild_cache.dir
+/home/mjb/programs/Notepad--/build/Desktop-Release/qtc_Unix_Makefiles/CMakeFiles/list_install_components.dir
+/home/mjb/programs/Notepad--/build/Desktop-Release/qtc_Unix_Makefiles/CMakeFiles/install.dir
+/home/mjb/programs/Notepad--/build/Desktop-Release/qtc_Unix_Makefiles/CMakeFiles/install/local.dir
+/home/mjb/programs/Notepad--/build/Desktop-Release/qtc_Unix_Makefiles/CMakeFiles/install/strip.dir
+/home/mjb/programs/Notepad--/build/Desktop-Release/qtc_Unix_Makefiles/CMakeFiles/Notepad--_autogen.dir
